@@ -6,7 +6,7 @@
         color: black;
     }
     body {
-        background-image: url('bg.jpg');
+        background-color: green;
         background-size: cover;
     }
 
