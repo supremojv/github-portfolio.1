@@ -9,6 +9,95 @@
         background-color: green;
         background-size: cover;
     }
+    header {
+        background: green;
+        height: 66px;
+    }
+    
+    header * {
+        color: white;
+    }
+    
+    header .logo {
+        float: left;
+        height: inherit;
+        margin-left: 2em;
+    }
+    
+    header .logo-text {
+        margin: 9px;
+        font-family: 'Candal', serif;
+    }
+    
+    header .logo-text span {
+        color: yellow;
+    }
+    
+    header ul {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; 
+    }
+    header ul li {
+        float: left;
+        position: relative;
+    }
+    
+    header ul li ul {
+        position: absolute;
+        top: 66px;
+        right: 0px;
+        width: 180px;
+        display: none;
+        z-index: 88888;
+    }
+    header ul li:hover ul {
+        display: block;
+    }
+    
+    header ul li ul li {
+        width: 100%;
+    }
+    
+    header ul li ul li a {
+        padding: 10px;
+        background: white;
+        color:black;
+    }
+    
+    header ul li ul li a.logout {
+        color: red;
+    }
+    
+    header ul li ul li a:hover {
+        background:rgb(128, 128, 128);
+    }
+    
+    
+    header ul li a {
+        display: block;
+        padding: 21px;
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        background: darkgreen;
+        transition: 0.5s;
+    }
+    
+    header .menu-toggle {
+        display: none;
+    }
+    
+    .page-wrapper {
+        min-height: 100%;
+    }
+    
+    .page-wrapper a:hover{
+        color: green;
+    }
 
     html {
         font-size: 10px;
@@ -48,14 +137,14 @@
         text-align: center;
     }
     .section-title span {
-        color: blue;
+        color: black;
     }
     .cta {
         display: inline-block;
         padding: 10px 30px;
         color: black;
         background-color: transparent;
-        border: 2px solid blue;
+        border: 2px solid black;
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
@@ -65,7 +154,7 @@
     }
     .cta:hover {
         color: black;
-        background-color: blue;
+        background-color: black;
     }
     .brand h1 {
         font-size: 3rem;
